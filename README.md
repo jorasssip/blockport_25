@@ -6,11 +6,10 @@
 
 ## Запуск из GitHub
 
-Замените `USERNAME` на имя вашего GitHub-аккаунта:
 
 ```bash
 tmp="$(mktemp)" || exit 1; \
-curl -fsSL https://raw.githubusercontent.com/USERNAME/smtp25-guard/main/smtp25-guard.sh -o "$tmp" && \
+curl -fsSL https://raw.githubusercontent.com/jorasssip/blockport_25/main/install.sh -o "$tmp" && \
 sudo bash "$tmp"; \
 rc=$?; rm -f -- "$tmp"; exit "$rc"
 ```
